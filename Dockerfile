@@ -11,7 +11,7 @@ COPY package.json package-lock.json ./
 COPY .npmrc ./
 
 # Install dependencies
-RUN npm ci
+RUN npm i --legacy-peer-deps
 
 # Copy source files
 COPY . .
